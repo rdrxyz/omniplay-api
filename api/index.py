@@ -99,7 +99,7 @@ def mcp_endpoint():
 
     return jsonify({"jsonrpc": "2.0", "id": req_id, "result": result})
 
-# --- 3. ENDPOINT A2A (ID AKUN 11: 22376) ---
+# --- 3. ENDPOINT A2A (UPDATE ID AKUN 11: 22379) ---
 @app.route('/.well-known/agent-card.json', methods=['GET','OPTIONS'])
 def a2a_endpoint():
     return jsonify({
@@ -116,7 +116,7 @@ def a2a_endpoint():
         },
         "registrations": [
             {
-                "agentId": 22376,
+                "agentId": 22379,
                 "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
             }
         ],
